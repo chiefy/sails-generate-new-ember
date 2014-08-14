@@ -1,7 +1,7 @@
 {
-  "name": "sails-generate-new",
-  "version": "0.10.17",
-  "description": "Generate a new Sails app.",
+  "name": "sails-generate-new-ember",
+  "version": "0.0.1",
+  "description": "Generate a new Sails app with an Ember-based frontend.",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
@@ -11,26 +11,27 @@
     "generator",
     "sails",
     "generate",
-    "plugin"
+    "plugin",
+    "ember"
   ],
-  "author": "balderdashy",
+  "author": "Christopher 'Chief' Najewicz <chief@beefdisciple.com>",
   "license": "MIT",
   "dependencies": {
+    "async": "~0.2.9",
     "lodash": ">=2.4.x",
     "merge-defaults": ">=0.1.0",
-    "async": "~0.2.9"
+    "pluralize": "~0.0.11"
   },
   "devDependencies": {
     "sails-generate": "*",
     "reportback": "*",
     "fs-extra": "*",
-    "sails-generate-backend": "~0.10.1",
-    "sails-generate-frontend": "~0.10.1",
-    "sails-generate-gruntfile": "~0.10.2"
+    "sails-generate-backend-ember": "~0.0.1",
+    "sails-generate-frontend-ember": "~0.0.1"
   },
   "sailsGenerator": {
     "type": "new",
-    "behavior": "default implementation of `sails new`",
+    "behavior": "ember-based implementation of `sails new`",
     "sailsVersion": "~0.10.0"
   }
 }

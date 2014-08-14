@@ -8,7 +8,11 @@ module.exports = function(scope) {
 
 	var package = {};
 	package.generators = {};
-	package.generators.modules = {};
+	package.generators.modules = {
+		'new': 'sails-generate-new-ember',
+		'frontend' : 'sails-generate-frontend-ember',
+		'backend' : 'sails-generate-backend-ember'
+	};
 
 	//
 	// if scope has exceptional config, include it in the rc file:

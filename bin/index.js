@@ -2,9 +2,9 @@
  * Module dependencies
  */
 
-var path = require('path');
-var sailsgen = require('sails-generate/lib/generate');
-var Generator = require('../lib');
+var path = require('path'),
+	sailsgen = require('sails-generate/lib/generate'),
+	Generator = require('../lib');
 
 //
 // This script exists so we can run our generator
@@ -18,9 +18,7 @@ sailsgen(Generator, {
 	sails: {
 		version: '0',
 		dependencies: {
-			'sails-disk': '1.2.3',
-			'ejs': '1.2.3',
-			'grunt': '1.2.3'
+			'sails-disk': '1.2.3'
 		}
 	}
 
@@ -28,8 +26,9 @@ sailsgen(Generator, {
 	// foo: 'bar'
 
 }, function (err) {
-	if (err) throw err;
-
+	if (err) {
+		throw err;
+	}
 	// It worked!
 	console.log('Done.');
 });
