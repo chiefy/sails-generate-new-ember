@@ -31,14 +31,7 @@ module.exports = function dataForPackageJSON(scope) {
             'lodash': getDependencyVersion(sailsPkg, 'lodash'),
             'pluralize': getDependencyVersion(sailsPkg, 'pluralize'),
             'rc': getDependencyVersion(sailsPkg, 'rc'),
-            'body-parser': '^1.2.0',
-            'broccoli-asset-rev': '0.0.17',
-            'broccoli-ember-hbs-template-compiler': '^1.5.0',
-            'ember-cli': '0.0.40',
-            'ember-cli-ember-data': '0.1.0',
-            'ember-cli-ic-ajax': '0.1.1',
-            'glob': '^3.2.9',
-            'originate': '0.1.5'
+            'ember-cli': '*'
         },
         scripts: {
             start: 'node app.js',

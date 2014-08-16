@@ -1,33 +1,29 @@
-# sails-generate-new
+# sails-generate-new-ember
 
-A generator for Sails.js.
+A generator for Sails.js, uses `sails-generate-frontend-ember` and `sails-generate-backend-ember`.
 
 
 ## Usage
 
+### Modify your `.sailsrc` file (in your home directory or working directory)
+
+```javascript
+{
+    "generators" : {
+        "modules" : {
+            "new" : "sails-generate-new-ember",
+            "frontend" : "sails-generate-frontend-ember",
+            "backend" : "sails-generate-backend-ember"
+        }
+    }
+}
+```
+
 #### On the command line
 
 ```sh
-sails generate sails-generate-new
+sails new my-app-name
 ```
-
-#### In a node script
-
-```javascript
-var generate = require('sails-generate');
-var scope = {};
-generate(require('sails-generate-new'), scope, function (err) {
-	if (err) throw err;
-
-	// Log output available in `scope` for your enjoyment:
-	console.log(scope);
-});
-```
-
-
-## Contributing to this generator
-
-See `CONTRIBUTING.md`.
 
 ## License
 
