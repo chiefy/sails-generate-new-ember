@@ -45,11 +45,35 @@
       console.error('Your `.sailsrc` file(s) will be ignored.');
       console.error('To resolve this, run:');
       console.error('npm install rc --save');
-      rc = function () { return {}; };
+      rc = function() {
+        return {};
+      };
     }
   }
 
+  // Try to get ember-cli
+  var cli;
+  try {
+    cli = require('./ember/node_modules/ember-cli');
+  } catch (e) {
+    console.error('Could not find dependency: `ember-cli`.');
+    console.error('To resolve this, run:');
+    console.error('npm install ember-cli --save');
+    process.exit(1);
+  }
 
-  // Start server
+
+  // Start Sails server
   sails.lift(rc('sails'));
+  
+  var path = process.cwd();
+
+  process.chdir(path + '/ember');
+  
+  cli({
+    cliArgs: ['serve','--output-path=' + path + '/dist'],
+    inputStream: process.stdin,
+    outputStream: process.stdout
+  });
+
 })();
