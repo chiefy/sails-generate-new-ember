@@ -1,6 +1,6 @@
 {
   "name": "sails-generate-new-ember",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate a new Sails app with an Ember-cli-based frontend.",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "sails",
     "generate",
     "plugin",
-    "ember"
+    "ember",
+    "ember-cli"
   ],
   "author": "Christopher 'Chief' Najewicz <chief@beefdisciple.com>",
   "license": "MIT",
@@ -21,7 +22,7 @@
     "lodash": ">=2.4.x",
     "merge-defaults": ">=0.1.0",
     "pluralize": "~0.0.11",
-    "sails-generate-backend-ember": "~0.0.1",
+    "sails-generate-backend-ember": "~0.0.2",
     "sails-generate-frontend-ember": "~0.0.1"
   },
   "devDependencies": {
