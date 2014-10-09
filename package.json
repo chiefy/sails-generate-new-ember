@@ -18,6 +18,7 @@
   "author": "Christopher 'Chief' Najewicz <chief@beefdisciple.com>",
   "license": "MIT",
   "dependencies": {
+    "fs-extra": "*",
     "async": "~0.2.9",
     "lodash": ">=2.4.x",
     "merge-defaults": ">=0.1.0",
@@ -26,7 +27,6 @@
     "sails-generate-frontend-ember": "~0.0.1"
   },
   "devDependencies": {
-    "fs-extra": "*",
     "reportback": "*",
     "sails-generate": "*"
   },
