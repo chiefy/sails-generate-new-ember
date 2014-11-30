@@ -20,13 +20,13 @@
   "dependencies": {
     "async": "~0.2.9",
     "lodash": ">=2.4.x",
+    "fs-extra": "*",
     "merge-defaults": ">=0.1.0",
     "pluralize": "~0.0.11",
     "sails-generate-backend-ember": "~0.0.2",
     "sails-generate-frontend-ember": "~0.0.1"
   },
   "devDependencies": {
-    "fs-extra": "*",
     "reportback": "*",
     "sails-generate": "*"
   },
